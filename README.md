@@ -26,5 +26,12 @@ Or:
 python parseMBFiles.py allMBFiles/
 ```
 
+As docker conversion from https://github.com/MassBank/MassBank-data
+all-in-one. From within the checked-out working copy of MassBankUpdate:
+
+```
+docker run --rm -v $PWD:/MBU hroest/openms-pyopenms-v2.2.0 /MBU/convert-massbank.sh'
+```
+
 Note : For updating MB2HMDBmapping.csv you need to update HMDB first : 
 https://github.com/epoyraz/updateHMDB
